@@ -13,7 +13,7 @@ A robust server application that fetches real-time cryptocurrency data from the 
 ## Requirements
 
 - **Rust** (version 1.58.0 or higher) — for building and running the project
-- **CoinMarketCap API key** — for accessing cryptocurrency data. Create your API key at [CoinMarketCap](https://coinmarketcap.com/api/) and store it in a `.env` file
+- **CoinMarketCap API key** — for accessing cryptocurrency data. Create your API key at [CoinMarketCap](https://coinmarketcap.com/api/) and store it in a `main.rs` file
 
 ## Installation
 
