@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            background-attachment: fixed;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='690' preserveAspectRatio='none' viewBox='0 0 1440 690'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1288%26quot%3b)' fill='none'%3e%3crect width='1440' height='690' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0 480.24L10 552.12L20 470.12L30 507.04L40 537.43L50 561.71L60 576.65L70 584.35L80 570.23L90 494.63L100 447.55L110 428.87L120 462.83L130 406.9L140 433.8L150 479.65L160 548.72L170 619.25L180 539.71L190 533.72L200 496.07L210 433.95L220 424.97L230 458.24L240 389.7L250 403.78L260 486.86L270 440.37L280 505.79L290 534.29L300 480.65L310 518.47L320 581.6L330 502.31L340 452.79L350 367.38L360 350.41L370 266.2L380 343.14L390 381.15L400 432.34L410 494.09L420 526.62L430 595.63L440 550.59L450 616.91L460 610.34L470 548.07L480 614.74L490 639.95L500 588.47L510 653.35L520 579L530 562.14L540 632.91L550 617.34L560 599.11L570 536.73L580 619.13L590 606.54L600 550.8L610 533.64L620 465.56L630 549.08L640 467.21L650 462.34L660 410.4L670 383.43L680 362.33L690 360.84L700 353.42L710 318.84L720 290.25L730 251.52L740 276.02L750 249.01L760 270.25L770 348.12L780 267.09L790 202.25L800 285.12L810 208.55L820 279.43L830 267.27L840 235.48L850 275.35L860 304.52L870 339.68L880 375.8L890 289.96L900 208.06L910 270.91L920 351L930 291.46L940 301.28L950 385.64L960 353.96L970 346.78L980 362.66L990 377.54L1000 396.01L1010 376.8L1020 425.98L1030 361.47L1040 416.16L1050 368.35L1060 385.87L1070 353.11L1080 357.71L1090 331.35L1100 285.62L1110 221.72L1120 219.93L1130 172.9L1140 166.88L1150 117.56L1160 91.27L1170 80.61L1180 38.38L1190 102.24L1200 86.87L1210 75.58L1220 30.2L1230 96.94L1240 154.72L1250 78.42L1260 125.66L1270 182.2L1280 182.33L1290 153.42L1300 210.32L1310 270.04L1320 266L1330 347.8L1340 374.82L1350 432.27L1360 395.36L1370 326.72L1380 367.82L1390 373.67L1400 378.27L1410 426.28L1420 343.94L1430 398.72L1440 369.71' stroke='%23224b75' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 480.24L10 552.12L20 470.12L30 507.04L40 537.43L50 561.71L60 576.65L70 584.35L80 570.23L90 494.63L100 447.55L110 428.87L120 462.83L130 406.9L140 433.8L150 479.65L160 548.72L170 619.25L180 539.71L190 533.72L200 496.07L210 433.95L220 424.97L230 458.24L240 389.7L250 403.78L260 486.86L270 440.37L280 505.79L290 534.29L300 480.65L310 518.47L320 581.6L330 502.31L340 452.79L350 367.38L360 350.41L370 266.2L380 343.14L390 381.15L400 432.34L410 494.09L420 526.62L430 595.63L440 550.59L450 616.91L460 610.34L470 548.07L480 614.74L490 639.95L500 588.47L510 653.35L520 579L530 562.14L540 632.91L550 617.34L560 599.11L570 536.73L580 619.13L590 606.54L600 550.8L610 533.64L620 465.56L630 549.08L640 467.21L650 462.34L660 410.4L670 383.43L680 362.33L690 360.84L700 353.42L710 318.84L720 290.25L730 251.52L740 276.02L750 249.01L760 270.25L770 348.12L780 267.09L790 202.25L800 285.12L810 208.55L820 279.43L830 267.27L840 235.48L850 275.35L860 304.52L870 339.68L880 375.8L890 289.96L900 208.06L910 270.91L920 351L930 291.46L940 301.28L950 385.64L960 353.96L970 346.78L980 362.66L990 377.54L1000 396.01L1010 376.8L1020 425.98L1030 361.47L1040 416.16L1050 368.35L1060 385.87L1070 353.11L1080 357.71L1090 331.35L1100 285.62L1110 221.72L1120 219.93L1130 172.9L1140 166.88L1150 117.56L1160 91.27L1170 80.61L1180 38.38L1190 102.24L1200 86.87L1210 75.58L1220 30.2L1230 96.94L1240 154.72L1250 78.42L1260 125.66L1270 182.2L1280 182.33L1290 153.42L1300 210.32L1310 270.04L1320 266L1330 347.8L1340 374.82L1350 432.27L1360 395.36L1370 326.72L1380 367.82L1390 373.67L1400 378.27L1410 426.28L1420 343.94L1430 398.72L1440 369.71L1440 690L0 690z' fill='url(%26quot%3b%23SvgjsLinearGradient1289%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1288'%3e%3crect width='1440' height='690' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient1289'%3e%3cstop stop-opacity='0.65' stop-color='%23224b75' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='%23508dcc' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #limit {
+            width: 5px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #aaa;
+        }
+
+        .news-card {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .loader {
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        img {
+            max-width: 530px;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency News</h1>
+        <div class="input-group">
+            <input type="text" id="symbol"  placeholder="Enter name or symbol">
+            <input type="text" id="filter" placeholder="Filter by keyword (optional)">
+            <input type="number" id="limit" placeholder="Limit (e.g., 5)" min="1" value="5">
+            <button onclick="fetchNews()" id="search-button" type="submit">Search News</button>
+        </div>
+        <div id="loader" class="loader" style="display: none;">Loading...</div>
+        <div id="news-container"></div>
+    </div>
+
+    <script>
+        function fetchNews() {
+            const symbol = document.getElementById("symbol").value.toUpperCase();
+            const filter = document.getElementById("filter").value;
+            const limit = document.getElementById("limit").value;
+            const searchButton = document.getElementById("search-button");
+            const loader = document.getElementById("loader");
+
+
+            if (!symbol) {
+                alert("Please enter a cryptocurrency symbol!");
+                return;
+            }
+
+            searchButton.disabled = true; // Disable the search button during the request
+            loader.style.display = "block"; // Show the loading text
+
+            let url = `http://127.0.0.1:5000/news?name=${symbol}`;
+            if (filter) url += `&filter=${encodeURIComponent(filter)}`;
+            if (limit) url += `&limit=${limit}`;
+
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById("news-container");
+                    container.innerHTML = "";
+                    loader.style.display = "none"; // Hide the loader
+
+                    if (data.length === 0) {
+                        container.innerHTML = "<p>No news found for this symbol.</p>";
+                        return;
+                    }
+
+                    data.forEach(article => {
+                        const card = document.createElement("div");
+                        card.className = "news-card";
+
+                        const imageUrl = article.image_url ? article.image_url : "";
+
+                        card.innerHTML = `
+                            <img src="${imageUrl}">
+                            <h2>${article.title}</h2>
+                            <p><strong>Source:</strong> ${article.source}</p>
+                            <p>${article.summary}</p>
+                            <a href="${article.link}" target="_blank">Read more</a>
+                        `;
+                        container.appendChild(card);
+                    });
+                })
+                .catch(() => {
+                    document.getElementById("news-container").innerHTML = "<p>Error fetching data.</p>";
+                    loader.style.display = "none"; // Hide the loader
+                })
+                .finally(() => {
+                    searchButton.disabled = false; // Re-enable the search button after the request
+                });
+        }
+    </script>
+</body>
+</html>
