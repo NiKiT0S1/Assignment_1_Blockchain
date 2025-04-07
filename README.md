@@ -1,20 +1,21 @@
 # Cryptocurrency News Aggregator
 
-A robust server application that fetches real-time cryptocurrency data from the **CoinMarketCap API** and serves curated news articles through a RESTful API interface. The project currently focuses on backend functionality, efficiently retrieving and processing cryptocurrency data before delivering it as structured JSON responses.
+A robust server application that fetches real-time cryptocurrency data from the **CoinMarketCap API** and serves curated news articles through a RESTful API interface. The project currently focuses on backend functionality, efficiently retrieving and processing cryptocurrency data before delivering it as structured JSON responses. A lightweight frontend is also included, allowing basic interaction with the backend using plain HTML and CSS.
 
 ## Features
 
 - Real-time cryptocurrency data retrieval
-- Customizable news filtering
-- Pagination support
-- Efficient API caching
+- Lightweight HTML/CSS frontend interface
 - Currency name-based querying
+- Simple pagination and keyword filtering
+- Clean RESTful API design with structured JSON responses
 
 ## Requirements
 
 - **Rust** (version 1.58.0 or higher) — for building and running the project
 - **CoinMarketCap API key** — for accessing cryptocurrency data. Create your API key at [CoinMarketCap](https://coinmarketcap.com/api/) and store it in a `main.rs` file
 - **CryptoNews API key** — for accessing cryptocurrency news data. Create your API key at [CryptoNews](https://cryptonews-api.com) and store it in a `main.rs` file
+- **Modern web browser** — for using the simple HTML/CSS frontend
 
 ## Installation
 
@@ -85,6 +86,18 @@ http://127.0.0.1:5000/news?name=ethereum&limit=10&filter=defi
 ]
 ```
 
+## Frontend
+
+A minimalistic HTML/CSS interface is provided in the frontend/ directory. It allows users to:
+
+- Input a cryptocurrency name
+
+- Set optional filters and article limits
+
+- View news results in a simple table layout
+
+No frontend frameworks or JavaScript are used — just static HTML and vanilla CSS.
+
 ## Error Handling
 
 The API returns appropriate HTTP status codes:
@@ -103,12 +116,10 @@ The API returns appropriate HTTP status codes:
 Assignment_1_Blockchain/
 ├── src/
 │   ├── main.rs          # Application entry point
-│   ├── api/             # API integration modules
-│   ├── models/          # Data structures
-│   └── handlers/        # Request handlers
+│   └── front.html       # Basic HTML/CSS frontend  
 ├── Cargo.toml           # Project dependencies
 ├── Cargo.lock           # Locked dependencies
-└── .env                 # Environment variables (not in repo)
+└── .env                 # Environment variables
 ```
 
 ### Running Tests
